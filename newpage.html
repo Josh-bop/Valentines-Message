@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="new.css">
+    <title>Message ❤️</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #ff97e8;
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+            flex-direction: column;
+        }
+        .audio-player {
+            width: 300px;
+            background-color: #1db954;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .audio-player img {
+            width: 45%;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+        .audio-player .title {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+        .audio-player .artist {
+            font-size: 14px;
+            color: #dcdcdc;
+            margin-bottom: 15px;
+        }
+        .audio-player audio {
+            width: 100%;
+            margin-top: 10px;
+            outline: none;
+        }
+        #delayed-button {
+            display: none;
+            margin-top: 20px;
+            padding: 20px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #f18aff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            border-radius: 25px;
+        }
+        #delayed-button:hover {
+            background-color: #0056b3;
+        }
+        .center-text {
+            text-align: center;
+            max-width: 600px;
+            padding: 20px;
+            background-color: #a0a0a0;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 180px;
+            color: #0a0a0a;
+        }
+        .center-text button {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 20px;
+        }
+        a {
+        text-decoration: none;
+        color: inherit;
+        }
+    </style>
+</head>
+<body>
+    <div class="audio-player">
+        <img src="album1.jpg" alt="Album Cover">
+        <div class="title">Love Don't Change</div>
+        <div class="artist">JEREMIH</div>
+        <audio controls autoplay loop>
+            <source src="audio.mp3" type="audio/mp3">
+        </audio>
+    </div>
+
+    <div class="center-text">
+        <p>I can't really think of a clear response when I ask myself why my feelings for you are so intense. However, I think it's all about the good vibes you give off, the happiness you make me smile for, the sincere laughing that comes from our talks, and the easy way you manage to keep my mind occupied even when we're not speaking. It's a difficult feeling to put into words, but I can say that you are essential to my happiness on each and every day. I get a sense of pleasure and contentment that comes from your presence. ❤️</p>
+        <a href="file.html">
+        <button id="delayed-button">Click me if you are done reading it</button>
+        </a>
+    </div>
+
+    <script>
+        // Wait 5 seconds before showing the button
+        setTimeout(function() {
+            document.getElementById('delayed-button').style.display = 'block';
+        }, 5000);
+    </script>
+</body>
+</html>
