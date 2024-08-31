@@ -1,0 +1,17 @@
+body { 
+
+background-image: url(background2.jpg);
+background-repeat: no-repeat;
+background-position: center;
+background-attachment: fixed;
+background-size: cover;
+}
+pre{
+    text-align: center;
+}
+.audio{
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+}
